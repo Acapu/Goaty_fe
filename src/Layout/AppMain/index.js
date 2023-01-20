@@ -15,11 +15,46 @@ const Charts = lazy(() => import("../../DemoPages/Charts"));
 const Forms = lazy(() => import("../../DemoPages/Forms"));
 const Tables = lazy(() => import("../../DemoPages/Tables"));
 
+const login = lazy(() => import("../../www/Auth"));
+const register = lazy(() => import("../../www/Auth"));
 
 const AppMain = () => {
 
     return (
         <Fragment>
+            {/* Register */}
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <div className="text-center">
+                            <Loader type="ball-pulse-rise"/>
+                        </div>
+                        <h6 className="mt-5">
+                            Please wait while we load all the Components examples
+                            <small>Because this is a demonstration we load at once all the Components examples. This wouldn't happen in a real live app!</small>
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/register" component={register}/>
+            </Suspense>
+
+            {/* Login */}
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <div className="text-center">
+                            <Loader type="ball-pulse-rise"/>
+                        </div>
+                        <h6 className="mt-5">
+                            Please wait while we load all the Components examples
+                            <small>Because this is a demonstration we load at once all the Components examples. This wouldn't happen in a real live app!</small>
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/login" component={login}/>
+            </Suspense>
 
             {/* Components */}
 
@@ -185,7 +220,7 @@ const AppMain = () => {
 
 
             <Route exact path="/" render={() => (
-                <Redirect to="/dashboards/crm"/>
+                <Redirect to="/login"/>
             )}/>
             <ToastContainer/>
         </Fragment>

@@ -39,7 +39,8 @@ class HeaderLogo extends React.Component {
     return (
       <Fragment>
         <div className="app-header__logo">
-          <div className="logo-src" />
+          {/* <div className="logo-src" /> */}
+          <h2 className="text-primary">Goaty</h2>
           <div className="header__pane ms-auto">
             <div onClick={this.toggleEnableClosedSidebar}>
               <Slider width={26} lineHeight={2} lineSpacing={5} color="#6c757d"

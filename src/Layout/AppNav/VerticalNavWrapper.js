@@ -22,7 +22,7 @@ class Nav extends Component {
   render() {
     return (
       <Fragment>
-        <h5 className="app-sidebar__heading">Menu</h5>
+        <h5 className="app-sidebar__heading">Testing</h5>
         <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
           className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
 

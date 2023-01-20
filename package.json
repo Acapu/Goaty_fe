@@ -1,13 +1,13 @@
 {
-  "name": "architectui-react-pro",
+  "name": "Goaty",
   "version": "2.1.0",
   "private": true,
-  "description": "ArchitectUI - Bootstrap 5 Premium Admin Dashboard Template",
+  "description": "Goaty",
   "author": "DashboardPack.com",
-  "homepage": "https://demo.dashboardpack.com/architectui-react-pro",
+  "homepage": "/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dpackdev/architectui-react-pro"
+    "url": "git+https://github.com/Acapu/Goaty_fe.git"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
