@@ -1,3 +1,11 @@
+export const workdiary = [
+  {
+    icon: "pe-7s-browser",
+    label: "Work Diary",
+    to: "#/diary"
+  }
+]
+
 export const MainNav = [
   {
     icon: "pe-7s-rocket",

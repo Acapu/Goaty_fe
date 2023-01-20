@@ -9,6 +9,7 @@ import {
   FormsNav,
   WidgetsNav,
   ChartsNav,
+  workdiary
 } from "./NavItems";
 
 class Nav extends Component {
@@ -22,6 +23,10 @@ class Nav extends Component {
   render() {
     return (
       <Fragment>
+        <h5 className="app-sidebar__heading">Work Diary</h5>
+        <MetisMenu content={workdiary} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
+          className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
+
         <h5 className="app-sidebar__heading">Testing</h5>
         <MetisMenu content={MainNav} onSelected={this.toggleMobileSidebar} activeLinkFromLocation
           className="vertical-nav-menu" iconNamePrefix="" classNameStateIcon="pe-7s-angle-down"/>
